@@ -88,3 +88,18 @@ Sau khi vượt qua Quality Gate, tạo báo cáo ngắn gọn, rõ ràng theo �
 4. Những gì chưa thể kiểm chứng tự động?
 5. Rủi ro hoặc lưu ý còn tồn tại?
 6. Đề xuất bước tiếp theo & Yêu cầu PO phê duyệt.
+
+## 5. Tự Động Cài Đặt & Đồng Bộ Hệ Thống Qua Chat
+Khi Product Owner đưa ra các yêu cầu quản trị hệ thống qua chat:
+1. **"Cài đặt Multi-Agent từ GitHub..."**:
+   - Tự động tạo thư mục `~/.gemini/config/plugins/` nếu chưa có.
+   - Chạy lệnh clone repository về thư mục `~/.gemini/config/plugins/global-dev-team`.
+   - Báo cáo kết quả và nhắc PO khởi động lại Antigravity một lần.
+2. **"Đồng bộ Multi-Agent lên GitHub" / "Push Multi-Agent"**:
+   - Di chuyển vào `~/.gemini/config/plugins/global-dev-team`.
+   - Chạy `git add .`, `git commit -m "update agent configs"`, `git push origin main`.
+   - Báo cáo cho PO: Đã đồng bộ thành công lên GitHub.
+3. **"Cập nhật Multi-Agent từ GitHub" / "Pull Multi-Agent"**:
+   - Di chuyển vào `~/.gemini/config/plugins/global-dev-team`.
+   - Chạy `git pull origin main`.
+   - Báo cáo cho PO các thay đổi mới nhất vừa được tải về.
