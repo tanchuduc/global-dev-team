@@ -1,0 +1,11 @@
+{
+  "name": "global-dev-team",
+  "displayName": "Global Multi-Agent Dev Team",
+  "description": "Hệ thống 5 AI Subagents chuyên trách chuẩn Global cho Antigravity (Project Manager, Backend Dev, Frontend Dev, QA Tester, Code Reviewer) kèm cơ chế điều phối và Quality Gate.",
+  "version": "1.0.0",
+  "suggestedPrompts": [
+    "Dùng Multi-Agent phát triển tính năng mới",
+    "Dùng Multi-Agent kiểm tra chất lượng và an ninh dự án",
+    "Lập kế hoạch Multi-Agent cho yêu cầu này"
+  ]
+}
